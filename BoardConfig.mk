@@ -169,11 +169,22 @@ BOARD_NFC_CHIPSET := pn548
 TARGET_USES_NQ_NFC := true
 
 # Enable dex-preoptimization to speed up first boot sequence
-WITH_DEXPREOPT := true
+# Enable dex pre-opt to speed up initial boot
+ifeq ($(HOST_OS),linux)
+  ifeq ($(WITH_DEXPREOPT),)
+    WITH_DEXPREOPT := true
+    WITH_DEXPREOPT_PIC := true
+    ifneq ($(TARGET_BUILD_VARIANT),user)
+      # Retain classes.dex in APK's for non-user builds
+      DEX_PREOPT_DEFAULT := nostripping
+    endif
+  endif
+endif
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := pme
 TARGET_USES_INTERACTION_BOOST := true
+ENABLE_SCHEDBOOST := true
 # BOARD_HAL_STATIC_LIBRARIES := libdumpstate.msm8996
 
 # Qualcomm
