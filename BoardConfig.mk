@@ -171,8 +171,10 @@ TARGET_USES_NQ_NFC := true
 # Enable dex-preoptimization to speed up first boot sequence
 WITH_DEXPREOPT := true
 
-# Power
-TARGET_POWERHAL_VARIANT := qcom
+# PowerHAL
+TARGET_POWERHAL_VARIANT := pme
+TARGET_USES_INTERACTION_BOOST := true
+# BOARD_HAL_STATIC_LIBRARIES := libdumpstate.msm8996
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
