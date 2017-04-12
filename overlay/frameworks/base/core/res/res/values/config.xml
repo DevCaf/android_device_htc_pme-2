@@ -536,7 +536,7 @@
     <bool name="config_pinnerCameraApp">true</bool>
 
     <!-- Enable system navigation keys. -->
-    <bool name="config_supportSystemNavigationKeys">false</bool>
+    <bool name="config_supportSystemNavigationKeys">true</bool>
     
     <!-- Whether to intercept inputs on screen off. -->
     <add-resource type="bool" name="config_enableKeyHandler"></add-resource>
