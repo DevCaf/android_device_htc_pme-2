@@ -258,6 +258,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Power
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine-msm8996.conf:system/etc/thermal-engine.conf
+
 PRODUCT_PACKAGES += \
     libshim_power \
     power.msm8996 \
