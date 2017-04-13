@@ -1006,8 +1006,8 @@ vendor/lib64/sensor_calibrate.so
 # Thermal - op3
 etc/thermal-engine.conf
 vendor/bin/thermal-engine|46fc6d83b391fdf036f7e70c54131bbe284ddde0
--vendor/lib/libthermalclient.so|580966926e8045632d196dcc21fb5ca49b5eba4e
--vendor/lib64/libthermalclient.so|ae9d79b82c92be57d17d6bac3a0451cac17110a5
+vendor/lib/libthermalclient.so|580966926e8045632d196dcc21fb5ca49b5eba4e
+vendor/lib64/libthermalclient.so|ae9d79b82c92be57d17d6bac3a0451cac17110a5
 vendor/lib64/libthermalioctl.so|6f8dba061e614856db01a9687004cc5188c51549
 
 # Time services
