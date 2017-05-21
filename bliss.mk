@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Device identifier. This must come after all inclusions
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/bliss/config/common.mk)
 
 PRODUCT_DEVICE := pme
-PRODUCT_NAME := aosp_pme
+PRODUCT_NAME := bliss_pme
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC 10
 PRODUCT_MANUFACTURER := HTC
