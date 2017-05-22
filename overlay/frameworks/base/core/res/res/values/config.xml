@@ -117,8 +117,8 @@
          gradually in the same manner that normally happens when the screen is on according to the
          brightening or dimming debounce thresholds.  As a result, it may take somewhat longer to
          adapt to the environment.  This mode may be better suited for watches. -->
-
     <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">false</bool>
+    
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">6</integer>
 
@@ -572,7 +572,6 @@
     <!-- Enable system navigation keys. -->
     <bool name="config_supportSystemNavigationKeys">true</bool>
     
->>>>>>> af90d4a... overlay: core: Inline with Marlin's config <Not sure if will work>
     <!-- Whether to intercept inputs on screen off. -->
     <add-resource type="bool" name="config_enableKeyHandler"></add-resource>
     <bool name="config_enableKeyHandler">true</bool>
